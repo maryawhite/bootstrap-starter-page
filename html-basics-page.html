@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
+    <!--YouTube tutorial from Traversy Media-->
+    <link rel="stylesheet" type="text/css" href="css/css-basics.css">
+</head>
+<body>
+<!--Headings-->
+<div class="container">
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+
+<!--Paragraphs-->
+    <p class="look-a-border">You can use letter-spacing<strong> to add space</strong> between individual letters. Architecto deleniti <em>dicta doloremque et ex</em>, facilis illum laborum magnam nesciunt nobis quod repudiandae sit voluptate? Dolor dolore iste quo sint suscipit.</p>
+    <p class="dotted-border">Paragraphs by default have a margin of 1em on top and bottom. Create a <a href="http://google.com" target="_blank">link</a> using a href. Href is the key, the link is the value. Key:value pair.</p>
+
+        <h2>Inline vs Block elements</h2>
+        <p>Inline elements are things like anchors, strong, emphasis, span. Block elements start a new line and included paragraphs, lists and headings.</p>
+    <div class="light-border">
+        <h3>Lists</h3>
+        <ul>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List items have padding on the left by default and a list style type by default</li>
+        </ul>
+        <ol>
+            <li>Ordered List Item 1</li>
+            <li>Ordered List Item 2</li>
+            <li>Ordered List items have padding on the left by default and a list style type by default</li>
+        </ol>
+        <p>Styling Links</p>
+        <ul class="list-of-links">
+            <li><a href="https://www.google.com/" target="blank">Hover to see color change.</a></li>
+            <li><a href="https://www.google.com/" target="blank"><span style="cursor:progress">
+                Bonus Cursor Span</span></a></li>
+            <li><a href="https://www.google.com/" target="blank">Visited links are grey.</a></li>
+        </ul>
+    </div>
+    <div class="box-1">
+    <p>Using tables for layout is outdated. Use CSS for layout. Tables only for tabular data.</p>
+    <!--Form-->
+    <p>Forms are not functional with HTML alone.</p>
+    </div>
+    <form class="my-form" action="process.php" method="POST">
+        <div class="form-group">
+        <label>First Name</label>
+        <input type="text" name="name">
+        </div>
+        <label>Last Name</label>
+        <input type="text" name="lastName">
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+        </div>
+        <div>
+            <label>Birthday</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+            <input type="submit" name="submit" value="Submit"> <!--submit buttons are non-functional without javascript-->
+        <br>
+        <button class="button">Click me</button>
+        <br>
+    </form>
+    <div class="lego-block">
+        <h3>Heading 3</h3>
+        <p>There are 3 divs. All 3 have the same class. In your CSS, you can float left, width 33.3% and they will arrange themselves. If you add a border, it will not fit correctly.</p>
+    </div>
+    <div class="lego-block">
+        <h3>Heading 3</h3>
+        <p>There are 3 divs. All 3 have the same class. In your CSS, you can float left, width 33.3% and they will arrange themselves. Add box-sizing: border box to your CSS to take that into account.</p>
+    </div>
+    <div class="lego-block">
+        <h3>Heading 3</h3>
+        <p>There are 3 divs. All 3 have the same class. In your CSS, you can float left, width 33.3% and they will arrange themselves. But, they are all different heights. Use Clear both to fix the alignment issue.</p>
+    </div>
+    <div class="clear-fix"></div>
+
+    <div id="main-block">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae est eveniet repellat sit temporibus vero voluptas?</p>
+    </div>
+
+    <div id="side-bar">
+        <p>The heading is float left, width 70%. The paragraph is float right width 30%. Use box-sizing border box and then a div to clear both.</p>
+    </div>
+    <div class="clear-fix"></div>
+
+    <img src="img/portfolio/thumbnails/1.jpg" alt="sample photo" width="200"> <!--it's better to use css for width of image but you can use it in the html-->
+
+
+    <!--Quotations-->
+    <blockquote>
+        This is a block quote. It is indented. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequatur cupiditate dolores, ducimus eligendi eos fugiat ipsa iste maiores minima nam natus, provident sequi similique suscipit tempora velit voluptas voluptatibus!
+    </blockquote>
+    <p>What does <abbr title="abbreviation">abbr</abbr> mean. How about <abbr title="Worldwide Wrestling Federation">WWF</abbr> or <abbr title="Worldwide Wildlife Fund">WWF</abbr></p>
+    <p><cite>HTML crash course</cite> by Brady Traversy</p>
+    <!--consider using semantic tags-header, section, article, aside, footer-->
+    <small>posted by Mary on September 24, 2021</small>
+</div>
+</body>
+</html>

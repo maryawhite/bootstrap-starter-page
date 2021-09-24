@@ -1,0 +1,123 @@
+h1 {
+    color:red;
+}
+
+h2 {
+    color:orange;
+}
+
+h3 {
+    color: green;
+}
+
+h4 {
+    color: blue;
+}
+
+body {
+    background-color:#f4f4f4;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*font-size: 18px;*/
+    /*font-weight:normal;*/
+    font: normal 18px Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    margin:0
+}
+.container {
+    width:80%;
+    margin: auto
+}
+
+.box-1 {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 12px;
+}
+.look-a-border{
+    background-color: #333;
+    color: #fff;
+    border: 5px solid red;
+    padding: 20px;
+    margin: 5px;
+    letter-spacing: 0.2em;
+}
+.dotted-border {
+    background-color: lightgreen;
+    color: darkblue;
+    border: 5px dotted black;
+    padding: 20px;
+    margin: 5px;
+}
+.light-border {
+    border: 1px dashed lightskyblue;
+    padding: 6px;
+    margin: 5px;
+}
+.light-border>h3 {
+    margin: 0;
+}
+.list-of-links {
+    list-style-type: none;
+}
+
+.list-of-links a {text-decoration: none;}
+.list-of-links a:link {color: darkmagenta;}
+.list-of-links a:hover {color: burlywood;}
+.list-of-links a:visited {color: gray;}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label { /* labels can be made block using CSS even though they are inline by default*/
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.lego-block {
+    float:left;
+    width:33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.clear-fix {
+    clear:both;
+}
+
+#main-block {
+    float:left;
+    width:70%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+
+
+}
+#side-bar {
+    float:right;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: pink;
+    color: blue;
+    padding: 15px;
+    border: 1px solid #ccc;
+
+}
+
